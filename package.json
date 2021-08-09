@@ -9,6 +9,7 @@
     "lint": "standard",
     "lint-fix": "standard --fix",
     "server": "node api",
+    "serve:dev": "webpack --mode development && npx serve dist -s",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,7 +32,9 @@
     "html-webpack-plugin": "^5.3.2",
     "webpack": "5.49.0",
     "webpack-cli": "4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^6.2.2"
   },
   "dependencies": {
     "@apollo/client": "^3.4.5",
